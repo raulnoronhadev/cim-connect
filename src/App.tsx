@@ -1,7 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import LoginButton from './components/LoginButton';
-import LogoutButton from './components/LogoutButton';
-import Profile from './components/Profile';
+import LoginButton from './LoginButton';
+import LogoutButton from './LogoutButton';
+import Profile from './Profile';
 
 function App() {
   const { isAuthenticated, isLoading, error } = useAuth0();
@@ -43,7 +43,7 @@ function App() {
 
         {isAuthenticated ? (
           <div className="logged-in-section">
-            <div className="logged-in-message">✅ Successfully authenticated!</div>
+            <div className="logged-in-message">Successfully authenticated!</div>
             <h2 className="profile-section-title">Your Profile</h2>
             <div className="profile-card">
               <Profile />
