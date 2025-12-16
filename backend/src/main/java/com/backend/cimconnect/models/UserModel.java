@@ -17,7 +17,7 @@ public class UserModel implements Serializable {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private UUID idUser;
     private String name;
-    private int age;
+    private Integer age;
     private String city;
     private String church;
     private String pastor;
@@ -39,11 +39,11 @@ public class UserModel implements Serializable {
         this.name = name;
     }
 
-    public String getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
